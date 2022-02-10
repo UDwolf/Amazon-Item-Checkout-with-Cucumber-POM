@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="12.945445">
+    <testcase classname="Amazon bedding Iteam selection and check out testing" name="Validate Amazon Home page" time="12.945445">
+        <system-out><![CDATA[Given user opens Browser....................................................passed
+Then user on Home page......................................................passed
+Then user click on Manubar-All..............................................passed
+Then user click on Shop of Department see All...............................passed
+Then user click on Home and kitchen.........................................passed
+Then user click on Bedding..................................................passed
+Then user on bedding Page...................................................passed
+Then user click on Feacture brands SafeRest and Foamily.....................passed
+When title of page change according to brands...............................passed
+Then user click on Product..................................................passed
+Then user on a Product page.................................................passed
+When title on a page chnage according to Product............................passed
+Then user check the Ratings.................................................passed
+Then user click on Add To Cart..............................................passed
+When check if iteam is alredy in cart.......................................passed
+Then click on process to checkout...........................................passed
+Then user is on Sign IN page................................................passed
+When title of the page change to Sign In....................................passed
+Then user click on create your amazon account...............................passed
+Then user Enter all the details and click on create account.................passed
+]]></system-out>
+    </testcase>
+</testsuite>

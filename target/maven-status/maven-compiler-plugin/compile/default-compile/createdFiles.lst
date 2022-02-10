@@ -1,0 +1,10 @@
+Pages\ProductPage.class
+Pages\BeddingPage.class
+StepDefinations\AmazonStepDefinations.class
+BaseClass\TestBase.class
+Pages\CartPage.class
+Runner\TestRunner.class
+Pages\CreateAccountPage.class
+Utillities\TestBaseUtill.class
+Pages\SignInPage.class
+Pages\AmazonHomePage.class

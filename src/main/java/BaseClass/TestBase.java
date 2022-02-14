@@ -3,8 +3,6 @@ package BaseClass;
 import java.io.FileInputStream;
 import java.time.Duration;
 import java.util.Properties;
-
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -57,8 +55,5 @@ public class TestBase {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(TestBaseUtill.IMPLICIT_WAIT));
 		
 		driver.get(prop.getProperty("url"));
-		
-		//JavascriptExecutor jse = (JavascriptExecutor)driver;
-		
 	}
 }

@@ -2,6 +2,7 @@ package StepDefinations;
 
 import BaseClass.TestBase;
 import Pages.AmazonHomePage;
+import Pages.BeddingPage;
 import Utillities.TestBaseUtill;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -12,6 +13,7 @@ public class AmazonStepDefinations extends TestBase{
 	
 	TestBaseUtill utility = new TestBaseUtill();
 	AmazonHomePage Hp = new AmazonHomePage();
+	BeddingPage Bp = new BeddingPage();
 		
 	@Given("^user opens Browser$")
 	public void user_opens_Browser() {
@@ -28,26 +30,37 @@ public class AmazonStepDefinations extends TestBase{
 	}
 
 	@Then("^user click on Manubar-All$")
-	public void user_click_on_Manubar_All() {
+	public void user_click_on_Manubar_All() throws InterruptedException {
+		Thread.sleep(1000);
 		Hp.clickOnManuBarAll();
 	}
 
 	@Then("^user click on Shop of Department see All$")
-	public void user_click_on_Shop_of_Department_see_All() {
+	public void user_click_on_Shop_of_Department_see_All() throws InterruptedException {
 		//System.out.println("I am in Shop Department");
+		Thread.sleep(2000);
 		Hp.clickOnSeeAll();
 	}
 
 	@Then("^user click on Home and kitchen$")
-	public void user_click_on_Home_and_kitchen() {
+	public void user_click_on_Home_and_kitchen() throws InterruptedException {
+		Thread.sleep(1000);
+		Hp.ClickOnHomeAndKitchen();
 	}
 
 	@Then("^user click on Bedding$")
-	public void user_click_on_Bedding() {
+	public void user_click_on_Bedding() throws InterruptedException {
+		Thread.sleep(1000);
+		Hp.clickOnBedding();
 	}
 
 	@Then("^user on bedding Page$")
-	public void user_on_bedding_Page() {
+	public void user_on_bedding_Page() throws InterruptedException {
+		Thread.sleep(1000);
+		String actualSelectedOption = Bp.validateBeddingPage();
+		String expectedSelectedOption = TestBaseUtill.BEDDING_PAGE_SELECTED_OPTION;
+		
+		Assert.assertEquals(expectedSelectedOption, actualSelectedOption);
 	}
 
 	@Then("^user click on Feacture brands SafeRest and Foamily$")

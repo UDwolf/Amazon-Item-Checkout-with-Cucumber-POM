@@ -118,140 +118,140 @@ formatter.match({
   "location": "AmazonStepDefinations.user_opens_Browser()"
 });
 formatter.result({
-  "duration": 11524085400,
+  "duration": 9392282700,
   "status": "passed"
 });
 formatter.match({
   "location": "AmazonStepDefinations.user_on_Home_page()"
 });
 formatter.result({
-  "duration": 7431300,
+  "duration": 7084200,
   "status": "passed"
 });
 formatter.match({
   "location": "AmazonStepDefinations.user_click_on_Manubar_All()"
 });
 formatter.result({
-  "duration": 511386100,
+  "duration": 1707622300,
   "status": "passed"
 });
 formatter.match({
   "location": "AmazonStepDefinations.user_click_on_Shop_of_Department_see_All()"
 });
 formatter.result({
-  "duration": 901862100,
+  "duration": 3393610000,
   "status": "passed"
 });
 formatter.match({
   "location": "AmazonStepDefinations.user_click_on_Home_and_kitchen()"
 });
 formatter.result({
-  "duration": 90800,
+  "duration": 1255612800,
   "status": "passed"
 });
 formatter.match({
   "location": "AmazonStepDefinations.user_click_on_Bedding()"
 });
 formatter.result({
-  "duration": 42900,
+  "duration": 2580997600,
   "status": "passed"
 });
 formatter.match({
   "location": "AmazonStepDefinations.user_on_bedding_Page()"
 });
 formatter.result({
-  "duration": 34900,
+  "duration": 1187883100,
   "status": "passed"
 });
 formatter.match({
   "location": "AmazonStepDefinations.user_click_on_Feacture_brands_SafeRest_and_Foamily()"
 });
 formatter.result({
-  "duration": 33700,
+  "duration": 18300,
   "status": "passed"
 });
 formatter.match({
   "location": "AmazonStepDefinations.title_of_page_change_according_to_brands()"
 });
 formatter.result({
-  "duration": 33000,
+  "duration": 13200,
   "status": "passed"
 });
 formatter.match({
   "location": "AmazonStepDefinations.user_click_on_Product()"
 });
 formatter.result({
-  "duration": 143100,
+  "duration": 12300,
   "status": "passed"
 });
 formatter.match({
   "location": "AmazonStepDefinations.user_on_a_Product_page()"
 });
 formatter.result({
-  "duration": 36900,
+  "duration": 11900,
   "status": "passed"
 });
 formatter.match({
   "location": "AmazonStepDefinations.title_on_a_page_chnage_according_to_Product()"
 });
 formatter.result({
-  "duration": 33500,
+  "duration": 12300,
   "status": "passed"
 });
 formatter.match({
   "location": "AmazonStepDefinations.user_check_the_Ratings()"
 });
 formatter.result({
-  "duration": 31500,
+  "duration": 12500,
   "status": "passed"
 });
 formatter.match({
   "location": "AmazonStepDefinations.user_click_on_Add_To_Cart()"
 });
 formatter.result({
-  "duration": 27300,
+  "duration": 16900,
   "status": "passed"
 });
 formatter.match({
   "location": "AmazonStepDefinations.check_if_iteam_is_alredy_in_cart()"
 });
 formatter.result({
-  "duration": 27300,
+  "duration": 15400,
   "status": "passed"
 });
 formatter.match({
   "location": "AmazonStepDefinations.click_on_process_to_checkout()"
 });
 formatter.result({
-  "duration": 41400,
+  "duration": 20700,
   "status": "passed"
 });
 formatter.match({
   "location": "AmazonStepDefinations.user_is_on_Sign_IN_page()"
 });
 formatter.result({
-  "duration": 43000,
+  "duration": 11800,
   "status": "passed"
 });
 formatter.match({
   "location": "AmazonStepDefinations.title_of_the_page_change_to_Sign_In()"
 });
 formatter.result({
-  "duration": 16200,
+  "duration": 12400,
   "status": "passed"
 });
 formatter.match({
   "location": "AmazonStepDefinations.user_click_on_create_your_amazon_account()"
 });
 formatter.result({
-  "duration": 16900,
+  "duration": 21900,
   "status": "passed"
 });
 formatter.match({
   "location": "AmazonStepDefinations.user_Enter_all_the_details_and_click_on_create_account()"
 });
 formatter.result({
-  "duration": 27400,
+  "duration": 13700,
   "status": "passed"
 });
 });

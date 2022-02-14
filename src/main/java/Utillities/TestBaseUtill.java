@@ -9,6 +9,8 @@ public class TestBaseUtill {
 	
 	public static String AMAZON_HOMEPAGE_TITLE = "Amazon.com. Spend less. Smile more.";
 	
+	public static String BEDDING_PAGE_SELECTED_OPTION = "Bedding";
+	
 	//public static String AMAZON_HOMEPAGE_TITLE = "Amazon.com. Spend less. Smile more...";
 	
 }

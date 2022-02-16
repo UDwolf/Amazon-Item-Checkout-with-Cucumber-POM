@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="19.525286">
-    <testcase classname="Amazon bedding Iteam selection and check out testing" name="Validate Amazon Home page" time="19.525286">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="30.462782">
+    <testcase classname="Amazon bedding Iteam selection and check out testing" name="Validate Amazon Home page" time="30.462782">
         <system-out><![CDATA[Given user opens Browser....................................................passed
 Then user on Home page......................................................passed
 Then user click on Manubar-All..............................................passed
@@ -8,9 +8,9 @@ Then user click on Shop of Department see All...............................pass
 Then user click on Home and kitchen.........................................passed
 Then user click on Bedding..................................................passed
 Then user on bedding Page...................................................passed
-Then user click on Feacture brands SafeRest and Foamily.....................passed
+Then user click on Feacture brands SafeRest and Ultopia Bedding.............passed
 When title of page change according to brands...............................passed
-Then user click on Product..................................................passed
+Then user check the rating of the product and click on it...................passed
 Then user on a Product page.................................................passed
 When title on a page chnage according to Product............................passed
 Then user check the Ratings.................................................passed

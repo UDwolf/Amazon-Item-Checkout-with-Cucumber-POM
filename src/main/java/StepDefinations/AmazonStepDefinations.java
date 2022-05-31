@@ -3,17 +3,26 @@ package StepDefinations;
 import BaseClass.TestBase;
 import Pages.AmazonHomePage;
 import Pages.BeddingPage;
+import Pages.CartPage;
+import Pages.ProductPage;
 import Utillities.TestBaseUtill;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import junit.framework.Assert;
+import org.testng.Assert;
+import org.testng.ITestContext;
+import org.testng.annotations.Ignore;
+
 
 public class AmazonStepDefinations extends TestBase {
 
 	TestBaseUtill utility = new TestBaseUtill();
 	AmazonHomePage Hp = new AmazonHomePage();
 	BeddingPage Bp = new BeddingPage();
+	ProductPage Pp = new ProductPage();
+	CartPage Cp = new CartPage();
+	
+	public static String productName;
 
 	@Given("^user opens Browser$")
 	public void user_opens_Browser() {
@@ -80,48 +89,91 @@ public class AmazonStepDefinations extends TestBase {
 
 	@Then("^user check the rating of the product and click on it$")
 	public void user_check_the_rating_of_the_product_and_click_on_it() throws InterruptedException  {
-	    Bp.userCheckRatings();
+		productName = Bp.userCheckRatings();
+	}
+	
+	@Then("^user is on product page and title on a page change according to Product$")
+	public void user_is_on_product_page_and_title_on_a_page_change_according_to_Product(){
+	   String actualProductPageTitle = Pp.validateProductPageTitle();
+	   
+	   Assert.assertTrue(actualProductPageTitle.contains(productName));
+	}
+	
+	@When("^product name and Image should change accordingly and product title should change according to new product selection$")
+	public void product_name_and_Image_should_change_accordingly_and_product_title_should_change_according_to_new_product_selection() throws InterruptedException {
+	   Pp.changingOfColourAndImage();
+	}
+	
+	@Then("^user select brown product$")
+	public void user_select_brown_product(){
+	    Pp.userSelectBrownProduct();	    
 	}
 
-	@Then("^user on a Product page$")
-	public void user_on_a_Product_page() {
-	}
-
-	@When("^title on a page chnage according to Product$")
-	public void title_on_a_page_chnage_according_to_Product() {
-	}
-
-	@Then("^user check the Ratings$")
-	public void user_check_the_Ratings() {
+	@Then("^product titile should change to brown$")
+	public void product_titile_should_change_to_brown() throws InterruptedException{
+	    String actualBrownProductTitle = ProductPage.ValidateBrownProductTitle();
+	    String expectedBrownPeoductTitle = TestBaseUtill.BROWN_PRODUCT_TITLE;
+	    
+	    System.out.println("I am at stepDe: "+actualBrownProductTitle);
+	    
+	    Assert.assertEquals(expectedBrownPeoductTitle, actualBrownProductTitle);
 	}
 
 	@Then("^user click on Add To Cart$")
 	public void user_click_on_Add_To_Cart() {
+	    ProductPage.addToCart();
+	}
+
+	@Then("^new frame should show up for cart$")
+	public void new_frame_should_show_up_for_cart() throws InterruptedException {
+	   String actulProcustTitileInCart = ProductPage.ValidateProductInCartFrame();
+	   String expectedProductTitileInCart = TestBaseUtill.BROWN_PRODUCT_TITLE;
+	   
+	   System.out.println("I am in StepDe: "+actulProcustTitileInCart);
+	   Assert.assertEquals(actulProcustTitileInCart, expectedProductTitileInCart);
+	}
+
+	@Then("^user click on cart\\.$")
+	public void user_click_on_cart() throws InterruptedException {
+	    ProductPage.cart();
+	}
+
+	@Given("^user is on Shopping cart page$")
+	public void user_is_on_Shopping_cart_page(){
+	    String expectedCartPageTitle = TestBaseUtill.AMZON_SHOPPING_CART_PAGE_TITLE;
+	    String actualCartPageTitle = CartPage.ValidatePageTitle();
+	    
+	    Assert.assertEquals(expectedCartPageTitle, actualCartPageTitle);
 	}
 
 	@When("^check if iteam is alredy in cart$")
-	public void check_if_iteam_is_alredy_in_cart() {
+	public void check_if_iteam_is_alredy_in_cart()  {
+	   
 	}
 
 	@Then("^click on process to checkout$")
-	public void click_on_process_to_checkout() {
+	public void click_on_process_to_checkout(){
+	   
 	}
 
-	@Then("^user is on Sign IN page$")
-	public void user_is_on_Sign_IN_page() {
-	}
-
-	@When("^title of the page change to Sign In$")
-	public void title_of_the_page_change_to_Sign_In() {
+	@Given("^user is on Sign-in page\\.$")
+	public void user_is_on_Sign_in_page()  {
+	   
 	}
 
 	@Then("^user click on create your amazon account$")
 	public void user_click_on_create_your_amazon_account() {
+	    
+	}
+
+	@Given("^User is on create account page\\.$")
+	public void user_is_on_create_account_page() {
+	    
 	}
 
 	@Then("^user Enter all the details and click on create account$")
 	public void user_Enter_all_the_details_and_click_on_create_account() {
-
+	    
 	}
-
+	
 }

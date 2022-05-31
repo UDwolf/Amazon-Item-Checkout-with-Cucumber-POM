@@ -1,25 +1,44 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="30.462782">
-    <testcase classname="Amazon bedding Iteam selection and check out testing" name="Validate Amazon Home page" time="30.462782">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="49.24336">
+    <testcase classname="Amazon bedding Iteam selection and check out testing" name="Validate Amazon Home page" time="22.859994">
         <system-out><![CDATA[Given user opens Browser....................................................passed
 Then user on Home page......................................................passed
 Then user click on Manubar-All..............................................passed
 Then user click on Shop of Department see All...............................passed
 Then user click on Home and kitchen.........................................passed
 Then user click on Bedding..................................................passed
-Then user on bedding Page...................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Amazon bedding Iteam selection and check out testing" name="Validate Bedding Page" time="12.609605">
+        <system-out><![CDATA[Then user on bedding Page...................................................passed
 Then user click on Feacture brands SafeRest and Ultopia Bedding.............passed
 When title of page change according to brands...............................passed
 Then user check the rating of the product and click on it...................passed
-Then user on a Product page.................................................passed
-When title on a page chnage according to Product............................passed
-Then user check the Ratings.................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Amazon bedding Iteam selection and check out testing" name="Validate Product Page" time="13.771598">
+        <system-out><![CDATA[Then user is on product page and title on a page change according to Product.passed
+When product name and Image should change accordingly and product title should change according to new product selection.passed
+Then user select brown product..............................................passed
+And product titile should change to brown...................................passed
 Then user click on Add To Cart..............................................passed
+And new frame should show up for cart.......................................passed
+Then user click on cart.....................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Amazon bedding Iteam selection and check out testing" name="Validate cart page" time="0.00078">
+        <system-out><![CDATA[Given user is on Shopping cart page.........................................passed
 When check if iteam is alredy in cart.......................................passed
 Then click on process to checkout...........................................passed
-Then user is on Sign IN page................................................passed
-When title of the page change to Sign In....................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Amazon bedding Iteam selection and check out testing" name="validate Sign-In page." time="0.000655">
+        <system-out><![CDATA[Given user is on Sign-in page...............................................passed
 Then user click on create your amazon account...............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Amazon bedding Iteam selection and check out testing" name="validate Create account page." time="0.000728">
+        <system-out><![CDATA[Given User is on create account page........................................passed
 Then user Enter all the details and click on create account.................passed
 ]]></system-out>
     </testcase>

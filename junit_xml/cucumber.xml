@@ -1,45 +1,49 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="49.24336">
-    <testcase classname="Amazon bedding Iteam selection and check out testing" name="Validate Amazon Home page" time="22.859994">
-        <system-out><![CDATA[Given user opens Browser....................................................passed
-Then user on Home page......................................................passed
-Then user click on Manubar-All..............................................passed
-Then user click on Shop of Department see All...............................passed
-Then user click on Home and kitchen.........................................passed
-Then user click on Bedding..................................................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="0">
+    <testcase classname="Amazon bedding Iteam selection and check out testing" name="Validate Amazon Home page" time="0">
+        <system-out><![CDATA[Given user opens Browser....................................................skipped
+Then user on Home page......................................................skipped
+Then user click on Manubar-All..............................................skipped
+Then user click on Shop of Department see All...............................skipped
+Then user click on Home and kitchen.........................................skipped
+Then user click on Bedding..................................................skipped
 ]]></system-out>
     </testcase>
-    <testcase classname="Amazon bedding Iteam selection and check out testing" name="Validate Bedding Page" time="12.609605">
-        <system-out><![CDATA[Then user on bedding Page...................................................passed
-Then user click on Feacture brands SafeRest and Ultopia Bedding.............passed
-When title of page change according to brands...............................passed
-Then user check the rating of the product and click on it...................passed
+    <testcase classname="Amazon bedding Iteam selection and check out testing" name="Validate Bedding Page" time="0">
+        <system-out><![CDATA[Then user on bedding Page...................................................skipped
+Then user click on Feacture brands SafeRest and Ultopia Bedding.............skipped
+When title of page change according to brands...............................skipped
+Then user check the rating of the product and click on it...................skipped
 ]]></system-out>
     </testcase>
-    <testcase classname="Amazon bedding Iteam selection and check out testing" name="Validate Product Page" time="13.771598">
-        <system-out><![CDATA[Then user is on product page and title on a page change according to Product.passed
-When product name and Image should change accordingly and product title should change according to new product selection.passed
-Then user select brown product..............................................passed
-And product titile should change to brown...................................passed
-Then user click on Add To Cart..............................................passed
-And new frame should show up for cart.......................................passed
-Then user click on cart.....................................................passed
+    <testcase classname="Amazon bedding Iteam selection and check out testing" name="Validate Product Page" time="0">
+        <system-out><![CDATA[When user is on product page and title on a page change according to Product.skipped
+Then header Image and colour of the product to validate.....................skipped
+When product name and Image should change accordingly and product colour should change according to new product selection.skipped
+Then user select brown product..............................................skipped
+And product header Image and colour should change to brown..................skipped
+Then user click on Add To Cart..............................................skipped
+And new frame should show up for cart.......................................skipped
+Then user click on cart.....................................................skipped
 ]]></system-out>
     </testcase>
-    <testcase classname="Amazon bedding Iteam selection and check out testing" name="Validate cart page" time="0.00078">
-        <system-out><![CDATA[Given user is on Shopping cart page.........................................passed
-When check if iteam is alredy in cart.......................................passed
-Then click on process to checkout...........................................passed
+    <testcase classname="Amazon bedding Iteam selection and check out testing" name="Validate cart page" time="0">
+        <system-out><![CDATA[Given user is on Shopping cart page.........................................skipped
+When check if iteam is alredy in cart.......................................skipped
+And Check the price of product match with actual price......................skipped
+When user select two iteams from qty........................................skipped
+Then Sutotal will change accordingly........................................skipped
+Then click on process to checkout...........................................skipped
 ]]></system-out>
     </testcase>
-    <testcase classname="Amazon bedding Iteam selection and check out testing" name="validate Sign-In page." time="0.000655">
-        <system-out><![CDATA[Given user is on Sign-in page...............................................passed
-Then user click on create your amazon account...............................passed
+    <testcase classname="Amazon bedding Iteam selection and check out testing" name="validate Sign-In page." time="0">
+        <system-out><![CDATA[Given user is on Sign-in page...............................................skipped
+Then user click on create your amazon account...............................skipped
 ]]></system-out>
     </testcase>
-    <testcase classname="Amazon bedding Iteam selection and check out testing" name="validate Create account page." time="0.000728">
-        <system-out><![CDATA[Given User is on create account page........................................passed
-Then user Enter all the details and click on create account.................passed
+    <testcase classname="Amazon bedding Iteam selection and check out testing" name="validate Create account page." time="0">
+        <system-out><![CDATA[Given User is on create account page........................................skipped
+Then user Enter all the details and click on create account.................skipped
 ]]></system-out>
     </testcase>
 </testsuite>

@@ -18,10 +18,11 @@ Then user check the rating of the product and click on it
 
 Scenario: Validate Product Page
 
-Then user is on product page and title on a page change according to Product
-When product name and Image should change accordingly and product title should change according to new product selection
+When user is on product page and title on a page change according to Product
+Then header Image and colour of the product to validate
+When product name and Image should change accordingly and product colour should change according to new product selection
 Then user select brown product
-And product titile should change to brown
+And product header Image and colour should change to brown
 Then user click on Add To Cart
 And new frame should show up for cart
 Then user click on cart.
@@ -30,7 +31,9 @@ Scenario: Validate cart page
 
 Given user is on Shopping cart page
 When check if iteam is alredy in cart
-
+And Check the price of product match with actual price
+When user select two iteams from qty
+Then Sutotal will change accordingly 
 Then click on process to checkout
 
 Scenario: validate Sign-In page.

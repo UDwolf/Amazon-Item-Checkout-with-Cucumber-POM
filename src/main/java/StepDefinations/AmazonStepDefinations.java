@@ -92,15 +92,20 @@ public class AmazonStepDefinations extends TestBase {
 		productName = Bp.userCheckRatings();
 	}
 	
-	@Then("^user is on product page and title on a page change according to Product$")
+	@When("^user is on product page and title on a page change according to Product$")
 	public void user_is_on_product_page_and_title_on_a_page_change_according_to_Product(){
 	   String actualProductPageTitle = Pp.validateProductPageTitle();
 	   
 	   Assert.assertTrue(actualProductPageTitle.contains(productName));
 	}
 	
-	@When("^product name and Image should change accordingly and product title should change according to new product selection$")
-	public void product_name_and_Image_should_change_accordingly_and_product_title_should_change_according_to_new_product_selection() throws InterruptedException {
+	@Then("^header Image and colour of the product to validate$")
+	public void header_Image_and_colour_of_the_product_to_validate() {
+	   
+	}
+	
+	@When("^product name and Image should change accordingly and product colour should change according to new product selection$")
+	public void product_name_and_Image_should_change_accordingly_and_product_colour_should_change_according_to_new_product_selection() throws InterruptedException {
 	   Pp.changingOfColourAndImage();
 	}
 	
@@ -108,6 +113,12 @@ public class AmazonStepDefinations extends TestBase {
 	public void user_select_brown_product(){
 	    Pp.userSelectBrownProduct();	    
 	}
+	
+	@Then("^product header Image and colour should change to brown$")
+	public void product_header_Image_and_colour_should_change_to_brown(){
+	   
+	}
+
 
 	@Then("^product titile should change to brown$")
 	public void product_titile_should_change_to_brown() throws InterruptedException{
@@ -147,9 +158,32 @@ public class AmazonStepDefinations extends TestBase {
 	}
 
 	@When("^check if iteam is alredy in cart$")
-	public void check_if_iteam_is_alredy_in_cart()  {
+	public void check_if_iteam_is_alredy_in_cart() throws InterruptedException  {
+		String actulProcustTitileInCart = ProductPage.ValidateProductInCartFrame();
+		   String expectedProductTitileInCart = TestBaseUtill.BROWN_PRODUCT_TITLE;
+		   
+		   System.out.println("I am in StepDe: "+actulProcustTitileInCart);
+		   Assert.assertEquals(actulProcustTitileInCart, expectedProductTitileInCart);
+	}
+	
+	@When("^Check the price of product match with actual price$")
+	public void check_the_price_of_product_match_with_actual_price() throws InterruptedException{
+	    String actualProductPriceProductPage = ProductPage.productPrice();
+	    String expectedProductPriceCartPage = CartPage.ValidateProductPrice();
+	    
+	    Assert.assertEquals(expectedProductPriceCartPage, actualProductPriceProductPage);
+	}
+
+	@When("^user select two iteams from qty$")
+	public void user_select_two_iteams_from_qty() {
 	   
 	}
+
+	@Then("^Sutotal will change accordingly$")
+	public void sutotal_will_change_accordingly() {
+	   
+	}
+
 
 	@Then("^click on process to checkout$")
 	public void click_on_process_to_checkout(){

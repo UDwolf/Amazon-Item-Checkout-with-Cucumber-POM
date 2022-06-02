@@ -21,19 +21,23 @@ public class ProductPage extends TestBase {
 		String prodImg = null;
 		Actions Builder = new Actions(driver);
 
-		Thread.sleep(1500);
+		Thread.sleep(2000);
 
-		List<WebElement> products = driver.findElements(By.xpath(
-				"//ul[@class='a-unordered-list a-nostyle a-button-list a-declarative a-button-toggle-group a-horizontal a-spacing-top-micro swatches swatchesSquare imageSwatches']//li"));
+		WebElement product = driver.findElement(By.id("inline-twister-expander-content-color_name"));
+
+		System.out.println(product.getAttribute("data-totalvariationcount").toString());
+
+		// Thread.sleep(1000);
+
 		WebElement Black = driver.findElement(By.id("color_name_0"));
 		WebElement White = driver.findElement(By.id("color_name_1"));
 		Brown = driver.findElement(By.id("color_name_2"));
 
-		Thread.sleep(1500);
+		// Thread.sleep(1500);
 
 		System.out.println("I am in changing Image method....before for loop");
 
-		if (products.size() != 0) {
+		/*if (product.getAttribute("data-totalvariationcount").toString()) {
 			for (int i = 0; i < products.size(); i++) {
 				System.out.println("I am in changing Image method....After for loop");
 				if (products.get(i).getAttribute("class").equals("swatchSelect")) {
@@ -130,7 +134,7 @@ public class ProductPage extends TestBase {
 			}
 		} else {
 			System.out.println("Opppsss....produstList empty");
-		}
+		}*/
 
 	}
 
@@ -150,7 +154,8 @@ public class ProductPage extends TestBase {
 
 	public static String ValidateProductInCartFrame() throws InterruptedException {
 		Thread.sleep(1500);
-		String productImg = driver.findElement(By.xpath("//img[@class='sc-product-image celwidget']"))
+		String productImg = driver.findElement(By.xpath(
+				"//img[@class='sc-product-image celwidget' and @alt='Utopia Bedding Adjustable Bed Furniture Risers - Elevation in Heights 3, 5 or 8 Inch Heavy Duty Risers for Sofa and Table - Supports up to 1,300 lbs - (8 Piece Set, Brown)']"))
 				.getAttribute("alt").toString();
 		return productImg;
 	}
@@ -159,5 +164,16 @@ public class ProductPage extends TestBase {
 		Thread.sleep(1500);
 		driver.findElement(By.xpath("//span[@id='attach-sidesheet-view-cart-button']//span[@class='a-button-inner']"))
 				.click();
+	}
+
+	public static String productPrice() throws InterruptedException {
+		Thread.sleep(1000);
+		WebElement price = driver.findElement(By.xpath(
+				"//td[contains(text(),'Price:')]/parent::tr/child::td[@class=\"a-span12\"]/span[@data-a-color=\"price\"]/span[2]"));
+
+		String priceStr = price.getText().toString();
+
+		return priceStr;
+
 	}
 }

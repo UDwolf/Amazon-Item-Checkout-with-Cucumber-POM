@@ -12,8 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 13566835100,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 5,
             "name": "user opens Browser",
@@ -24,8 +23,7 @@
           },
           {
             "result": {
-              "duration": 13772800,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 6,
             "name": "user on Home page",
@@ -36,8 +34,7 @@
           },
           {
             "result": {
-              "duration": 1421107300,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 7,
             "name": "user click on Manubar-All",
@@ -48,8 +45,7 @@
           },
           {
             "result": {
-              "duration": 2783728800,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 8,
             "name": "user click on Shop of Department see All",
@@ -60,8 +56,7 @@
           },
           {
             "result": {
-              "duration": 2012348000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 9,
             "name": "user click on Home and kitchen",
@@ -72,8 +67,7 @@
           },
           {
             "result": {
-              "duration": 3062201600,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 10,
             "name": "user click on Bedding",
@@ -94,8 +88,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1331073400,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 14,
             "name": "user on bedding Page",
@@ -106,8 +99,7 @@
           },
           {
             "result": {
-              "duration": 4512019100,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 15,
             "name": "user click on Feacture brands SafeRest and Ultopia Bedding",
@@ -118,8 +110,7 @@
           },
           {
             "result": {
-              "duration": 1022791500,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 16,
             "name": "title of page change according to brands",
@@ -130,8 +121,7 @@
           },
           {
             "result": {
-              "duration": 5743721000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 17,
             "name": "user check the rating of the product and click on it",
@@ -152,34 +142,42 @@
         "steps": [
           {
             "result": {
-              "duration": 5020000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 21,
             "name": "user is on product page and title on a page change according to Product",
             "match": {
               "location": "AmazonStepDefinations.user_is_on_product_page_and_title_on_a_page_change_according_to_Product()"
             },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "header Image and colour of the product to validate",
+            "match": {
+              "location": "AmazonStepDefinations.header_Image_and_colour_of_the_product_to_validate()"
+            },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 6810846000,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 22,
-            "name": "product name and Image should change accordingly and product title should change according to new product selection",
+            "line": 23,
+            "name": "product name and Image should change accordingly and product colour should change according to new product selection",
             "match": {
-              "location": "AmazonStepDefinations.product_name_and_Image_should_change_accordingly_and_product_title_should_change_according_to_new_product_selection()"
+              "location": "AmazonStepDefinations.product_name_and_Image_should_change_accordingly_and_product_colour_should_change_according_to_new_product_selection()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 283901600,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 23,
+            "line": 24,
             "name": "user select brown product",
             "match": {
               "location": "AmazonStepDefinations.user_select_brown_product()"
@@ -188,22 +186,20 @@
           },
           {
             "result": {
-              "duration": 1565697900,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 24,
-            "name": "product titile should change to brown",
+            "line": 25,
+            "name": "product header Image and colour should change to brown",
             "match": {
-              "location": "AmazonStepDefinations.product_titile_should_change_to_brown()"
+              "location": "AmazonStepDefinations.product_header_Image_and_colour_should_change_to_brown()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 403008200,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 25,
+            "line": 26,
             "name": "user click on Add To Cart",
             "match": {
               "location": "AmazonStepDefinations.user_click_on_Add_To_Cart()"
@@ -212,10 +208,9 @@
           },
           {
             "result": {
-              "duration": 1539903900,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 26,
+            "line": 27,
             "name": "new frame should show up for cart",
             "match": {
               "location": "AmazonStepDefinations.new_frame_should_show_up_for_cart()"
@@ -224,10 +219,9 @@
           },
           {
             "result": {
-              "duration": 3163220600,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 27,
+            "line": 28,
             "name": "user click on cart.",
             "match": {
               "location": "AmazonStepDefinations.user_click_on_cart()"
@@ -237,7 +231,7 @@
         ]
       },
       {
-        "line": 29,
+        "line": 30,
         "name": "Validate cart page",
         "description": "",
         "id": "amazon-bedding-iteam-selection-and-check-out-testing;validate-cart-page",
@@ -246,10 +240,9 @@
         "steps": [
           {
             "result": {
-              "duration": 708800,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 31,
+            "line": 32,
             "name": "user is on Shopping cart page",
             "match": {
               "location": "AmazonStepDefinations.user_is_on_Shopping_cart_page()"
@@ -258,10 +251,9 @@
           },
           {
             "result": {
-              "duration": 33900,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 32,
+            "line": 33,
             "name": "check if iteam is alredy in cart",
             "match": {
               "location": "AmazonStepDefinations.check_if_iteam_is_alredy_in_cart()"
@@ -270,10 +262,42 @@
           },
           {
             "result": {
-              "duration": 37400,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 33,
+            "line": 34,
+            "name": "Check the price of product match with actual price",
+            "match": {
+              "location": "AmazonStepDefinations.check_the_price_of_product_match_with_actual_price()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "user select two iteams from qty",
+            "match": {
+              "location": "AmazonStepDefinations.user_select_two_iteams_from_qty()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "Sutotal will change accordingly",
+            "match": {
+              "location": "AmazonStepDefinations.sutotal_will_change_accordingly()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 37,
             "name": "click on process to checkout",
             "match": {
               "location": "AmazonStepDefinations.click_on_process_to_checkout()"
@@ -283,7 +307,7 @@
         ]
       },
       {
-        "line": 35,
+        "line": 39,
         "name": "validate Sign-In page.",
         "description": "",
         "id": "amazon-bedding-iteam-selection-and-check-out-testing;validate-sign-in-page.",
@@ -292,10 +316,9 @@
         "steps": [
           {
             "result": {
-              "duration": 623200,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 37,
+            "line": 41,
             "name": "user is on Sign-in page.",
             "match": {
               "location": "AmazonStepDefinations.user_is_on_Sign_in_page()"
@@ -304,10 +327,9 @@
           },
           {
             "result": {
-              "duration": 31500,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 38,
+            "line": 42,
             "name": "user click on create your amazon account",
             "match": {
               "location": "AmazonStepDefinations.user_click_on_create_your_amazon_account()"
@@ -317,7 +339,7 @@
         ]
       },
       {
-        "line": 40,
+        "line": 44,
         "name": "validate Create account page.",
         "description": "",
         "id": "amazon-bedding-iteam-selection-and-check-out-testing;validate-create-account-page.",
@@ -326,10 +348,9 @@
         "steps": [
           {
             "result": {
-              "duration": 691900,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 42,
+            "line": 46,
             "name": "User is on create account page.",
             "match": {
               "location": "AmazonStepDefinations.user_is_on_create_account_page()"
@@ -338,10 +359,9 @@
           },
           {
             "result": {
-              "duration": 36200,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 43,
+            "line": 47,
             "name": "user Enter all the details and click on create account",
             "match": {
               "location": "AmazonStepDefinations.user_Enter_all_the_details_and_click_on_create_account()"

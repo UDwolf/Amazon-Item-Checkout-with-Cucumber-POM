@@ -16,7 +16,43 @@ public class ProductPage extends TestBase {
 		return driver.getTitle();
 	}
 
-	public void changingOfColourAndImage() throws InterruptedException {
+	public static void ValidateProductDetails(String proTitle, String proColour, String proImage, String proListIteam) throws InterruptedException {
+		Thread.sleep(1000);
+		String selectedProTitle = driver.findElement(By.id("productTitle")).getText();
+		String selectedProColour = driver.findElement(By.id("inline-twister-expanded-dimension-text-color_name")).getText();
+		String selectedProImage = driver.findElement(By.id("landingImage")).getAttribute("src").toString();
+		String selectedProListIteam = driver.findElement(By.xpath("//span[@id='color_name_0']")).getAttribute("aria-checked").toString();
+
+		if (proTitle.equals(selectedProTitle) && proImage.equals(selectedProImage) && proColour.equals(selectedProColour) && proListIteam.equals(selectedProListIteam)) {
+			System.out.println("Valide....");
+		} else {
+			System.out.println("In valide....");
+		}
+	}
+
+	public static void changingOfColourAndImage() throws InterruptedException {
+		Thread.sleep(1000);
+		List<WebElement> products = driver.findElements(By.xpath("//div[@id='inline-twister-expander-content-color_name']//div[@class='a-section']//div[@id='tp-inline-twister-dim-values-container']//ul//li[position()>1]"));
+		System.out.println(products.size());
+		
+		for (int i = 0; i < products.size(); i++) {
+			Thread.sleep(500);
+			String selectedProColour = driver.findElement(By.id("inline-twister-expanded-dimension-text-color_name")).getText();
+			String selectedProImage = driver.findElement(By.id("landingImage")).getAttribute("src").toString();
+
+			productImgColourChange(products.get(i), selectedProColour, selectedProImage);
+		}
+	}
+
+	public static void productImgColourChange(WebElement product, String colour, String Image) {
+		Actions Builder = new Actions(driver);
+		Builder.moveToElement(product).build().perform();
+		Thread.sleep(1500);
+		if()
+		
+	}
+
+	/*public static void changingOfColourAndImage() throws InterruptedException {
 		String prodTitle = null;
 		String prodImg = null;
 		Actions Builder = new Actions(driver);
@@ -24,6 +60,9 @@ public class ProductPage extends TestBase {
 		Thread.sleep(2000);
 
 		WebElement product = driver.findElement(By.id("inline-twister-expander-content-color_name"));
+
+		List<WebElement> products = driver.findElements(By.xpath(
+				"//div[@id='inline-twister-expander-content-color_name']//div[@class='a-section']//div[@id='tp-inline-twister-dim-values-container']//ul//li[position()>1]"));
 
 		System.out.println(product.getAttribute("data-totalvariationcount").toString());
 
@@ -37,7 +76,7 @@ public class ProductPage extends TestBase {
 
 		System.out.println("I am in changing Image method....before for loop");
 
-		/*if (product.getAttribute("data-totalvariationcount").toString()) {
+		if (products.size() > 0) {
 			for (int i = 0; i < products.size(); i++) {
 				System.out.println("I am in changing Image method....After for loop");
 				if (products.get(i).getAttribute("class").equals("swatchSelect")) {
@@ -134,9 +173,9 @@ public class ProductPage extends TestBase {
 			}
 		} else {
 			System.out.println("Opppsss....produstList empty");
-		}*/
+		}
 
-	}
+	}*/
 
 	public void userSelectBrownProduct() {
 		Brown.click();

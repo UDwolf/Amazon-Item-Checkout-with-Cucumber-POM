@@ -1,4 +1,3 @@
-Pages\ProductPage.class
 Pages\BeddingPage.class
 StepDefinations\AmazonStepDefinations.class
 BaseClass\TestBase.class

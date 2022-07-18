@@ -40,17 +40,19 @@ public class ProductPage extends TestBase {
 			String selectedProColour = driver.findElement(By.id("inline-twister-expanded-dimension-text-color_name")).getText();
 			String selectedProImage = driver.findElement(By.id("landingImage")).getAttribute("src").toString();
 
-			productImgColourChange(products.get(i), selectedProColour, selectedProImage);
+			//productImgColourChange(products.get(i), selectedProColour, selectedProImage);
 		}
 	}
 
-	public static void productImgColourChange(WebElement product, String colour, String Image) {
+	/*public static void productImgColourChange(WebElement product, String colour, String Image) {
+		String Black = driver.findElement(By.xpath("//span[@id='color_name_0']")).getAttribute("")
+		
 		Actions Builder = new Actions(driver);
 		Builder.moveToElement(product).build().perform();
 		Thread.sleep(1500);
-		if()
 		
-	}
+		
+	}*/
 
 	/*public static void changingOfColourAndImage() throws InterruptedException {
 		String prodTitle = null;

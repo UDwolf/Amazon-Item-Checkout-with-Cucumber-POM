@@ -1,15 +1,22 @@
 package Pages;
 
+import java.time.Duration;
 import java.util.List;
 
+import org.apache.commons.lang.exception.ExceptionUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import BaseClass.TestBase;
+import Utillities.TestBaseUtill;
 
 public class BeddingPage extends TestBase {
+	
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
 	public String validateBeddingPage() {
 		List<WebElement> beddingList = driver.findElements(
@@ -35,8 +42,10 @@ public class BeddingPage extends TestBase {
 	}
 
 	public void ShortBrands() throws InterruptedException {
+		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//span[@class='a-size-base a-color-base'][contains(text(),'SafeRest')]"))));
 		driver.findElement(By.xpath("//span[@class='a-size-base a-color-base'][contains(text(),'SafeRest')]")).click();
-		Thread.sleep(1000);
+		//Thread.sleep(1000);
+		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//span[contains(text(),'Utopia Bedding')][@class='a-size-base a-color-base']"))));
 		driver.findElement(By.xpath("//span[contains(text(),'Utopia Bedding')][@class='a-size-base a-color-base']"))
 				.click();
 	}
